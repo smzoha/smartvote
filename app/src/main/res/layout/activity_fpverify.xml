@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="HardcodedText" >
+
+    <ImageView
+        android:id="@+id/imgFPExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Example of the Fingerprint Verification Operation"
+        android:src="@drawable/fpexample" />
+
+    <TextView
+        android:id="@+id/lblEnPara1FP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgFPExample"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/EnPara1FPLBL" />
+    
+    <TextView
+        android:id="@+id/lblBnPara1FP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblEnPara1FP"
+        android:layout_marginTop="5dp"
+        android:text="@string/bnPara1FPLBL" />
+
+    <Button
+        android:id="@+id/btnFPVerifyStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Start" />
+
+</RelativeLayout>

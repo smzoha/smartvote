@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zedapps.smartvote"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Intro"
+            android:label="@string/title_activity_intro"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".FPVerify"
+            android:label="@string/title_activity_fpverify"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".EBallot"
+            android:label="@string/title_activity_eballot"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".LoadData"
+            android:label="@string/title_activity_load_data"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".NewVoter"
+            android:label="@string/title_activity_new_voter"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".AdminPanel"
+            android:label="@string/title_activity_admin_panel"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".UserInfo"
+            android:label="@string/title_activity_user_info"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".AdminVoterPanel"
+            android:label="@string/title_activity_admin_voter_panel"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".RemoveUser"
+            android:label="@string/title_activity_remove_user"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".ThankUser"
+            android:label="@string/title_activity_thank_user"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".Report"
+            android:label="@string/title_activity_report"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+    </application>
+
+</manifest>

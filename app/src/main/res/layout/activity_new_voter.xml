@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtAddVoterInstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddVoterInstrLBL" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblNID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nidLBL" />
+
+        <EditText
+            android:id="@+id/txtNID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text|number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutNID"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblFName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FNameLBL" />
+
+        <EditText
+            android:id="@+id/txtFName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutFName"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblMName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MNameLBL" />
+
+        <EditText
+            android:id="@+id/txtMName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutMName"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblLName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LNameLBL" />
+
+        <EditText
+            android:id="@+id/txtLName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutLName"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddLBL" />
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutAddress"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dobLBL" />
+
+        <EditText
+            android:id="@+id/txtDOB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFAName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutDOB"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblFAName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FANameLBL" />
+
+        <EditText
+            android:id="@+id/txtFAName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMAName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutFAName"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/lblMAName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MANameLBL" />
+
+        <EditText
+            android:id="@+id/txtMAName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/layoutMAName" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.87"
+            android:text="@string/btnAddVoterSaveLBL"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnDiscard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="@string/btnDiscardLBL"
+            tools:ignore="ButtonStyle" />
+        
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/layoutSave" >
+
+            <Button
+                android:id="@+id/btnEnroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnEnrollLBL"
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle" />
+        
+        <Button
+            android:id="@+id/btnImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.55"
+            android:text="@string/btnTpLBL"
+            tools:ignore="ButtonStyle" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

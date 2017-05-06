@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/lblEnPara1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/enPara1LBL" />
+
+    <TextView
+        android:id="@+id/lblBnPara1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblEnPara1"
+        android:text="@string/bnPara1LBL" />
+
+    <TextView
+        android:id="@+id/lblEnPara2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblBnPara1"
+        android:layout_marginTop="5dp"
+        android:text="@string/enPara2LBL" />
+
+    <TextView	
+        android:id="@+id/lblBnPara2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblEnPara2"
+        android:text="@string/bnPara2LBL" />
+    
+    
+    <TextView
+        android:id="@+id/lblEnPara3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblBnPara2"
+        android:layout_marginTop="5dp"
+        android:text="@string/EnPara3LBL" />
+    
+    <TextView	
+        android:id="@+id/lblBnPara3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblEnPara3"
+        android:text="@string/bnPara3LBL" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/btnNextLBL" />
+    
+</RelativeLayout>

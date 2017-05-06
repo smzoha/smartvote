@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/txtWelcomeAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="@string/txtwelcome" />
+
+        <Button
+            android:id="@+id/btnEnableVoting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEnVoteLBL" />
+
+        <Button
+            android:id="@+id/btnDisableVoting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnDnVoteLBL" />
+
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGenRepLBL" />
+
+        <Button
+            android:id="@+id/btnLoadDBAPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnLoadDBLBL" />
+
+        <Button
+            android:id="@+id/btnAddVoter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnNewVoterLBL" />
+
+        <Button
+            android:id="@+id/btnRemoveVoter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRmvVoterLBL" />
+
+        <Button
+            android:id="@+id/btnExitAdminPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exitLBL" />
+                                        
+    </LinearLayout>
+
+</RelativeLayout>
